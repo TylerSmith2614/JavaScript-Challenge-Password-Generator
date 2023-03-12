@@ -18,18 +18,21 @@ function writePassword() {
   var correctPrompts = getPrompts();
 
   if(correctPrompts) {
-    
+    var newPassword = generatePassword();
+    var passwordText = document.querySelector("#password");
+      passwordText.value = newPassword;
+  } else {
+      passwordText.value = "";
   }
-  
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
 }
 
 function generatePassword() {
-
+    var password = "";
+    for (var i = 0; i < characterLength; i++ ) {
+      var randomIndex = Math.floor(Math.random() * choiceArr.length);
+      password = password + choiceArr[randomIndex];
+    }
+    return password;
 }
 
   function getPrompts(){
@@ -37,7 +40,7 @@ function generatePassword() {
     characterLength = parseInt(prompt ("How many characters would you like your password to contain?", "Password must be between 8-128 characters"));
 
       if(isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
-        alert("Charcter lengths has to be between 8-128 characters. Please Try again.");
+        alert("Character lengths have to be between 8-128 characters. Please Try again.");
         return false;
       }
 
