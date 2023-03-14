@@ -7,9 +7,8 @@ I modified started code to make a random password generate. It has conditions to
 https://tylersmith2614.github.io/JavaScript-Challenge-Password-Generator/
 
 ## Screenshots
-![Alt text](Develop/Images/javascript%20challenge%203%20screenshot%202.png)
-![Alt text](Develop/Images/javascript%20challenge%203%20screenshot.png)
-
+![Alt text](Images/javascript%20challenge%203%20screenshot%202.png)
+![Alt text](Images/javascript%20challenge%203%20screenshot.png)
 ## Your Task
 
 This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
